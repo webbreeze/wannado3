@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.1-dev (ddb55ca, 2020-02-02)"
+   sodipodi:docname="menu.svg"
+   id="svg837"
+   version="1.1"
+   clip-rule="evenodd"
+   fill-rule="evenodd"
+   height="20"
+   width="6">
+  <style
+     id="style845"></style>
+  <metadata
+     id="metadata843">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs841" />
+  <sodipodi:namedview
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     inkscape:current-layer="svg837"
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:cy="10"
+     inkscape:cx="3"
+     inkscape:zoom="22.407732"
+     showgrid="false"
+     id="namedview839"
+     inkscape:window-height="747"
+     inkscape:window-width="1313"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     inkscape:connector-curvature="0"
+     style="opacity:0.99;fill:#b69d74;fill-opacity:1"
+     id="path835"
+     d="m 3,14 c 1.656,0 3,1.344 3,3 0,1.656 -1.344,3 -3,3 -1.656,0 -3,-1.344 -3,-3 0,-1.656 1.344,-3 3,-3 z m 0,1 c 1.104,0 2,0.896 2,2 0,1.104 -0.896,2 -2,2 C 1.896,19 1,18.104 1,17 1,15.896 1.896,15 3,15 Z M 3,7 C 4.656,7 6,8.344 6,10 6,11.656 4.656,13 3,13 1.344,13 0,11.656 0,10 0,8.344 1.344,7 3,7 Z M 3,8 C 4.104,8 5,8.896 5,10 5,11.104 4.104,12 3,12 1.896,12 1,11.104 1,10 1,8.896 1.896,8 3,8 Z M 3,0 C 4.656,0 6,1.344 6,3 6,4.656 4.656,6 3,6 1.344,6 0,4.656 0,3 0,1.344 1.344,0 3,0 Z M 3,1 C 4.104,1 5,1.896 5,3 5,4.104 4.104,5 3,5 1.896,5 1,4.104 1,3 1,1.896 1.896,1 3,1 Z" />
+</svg>

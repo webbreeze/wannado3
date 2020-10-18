@@ -1,0 +1,10 @@
+fluidtemplate {
+	templateRootPath = EXT:wb_custom/Resources/Private/Templates/
+	partialRootPath = EXT:wb_custom/Resources/Private/Partials/
+	layoutRootPath = EXT:wb_custom/Resources/Private/Layouts/
+	
+	pagets__main = EXT:wb_custom/Resources/Private/Templates/Main.html
+}
+
+startPid = 1
+footerMenuPid = 7

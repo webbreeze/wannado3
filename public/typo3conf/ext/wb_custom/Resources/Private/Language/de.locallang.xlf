@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+   <file source-language="en" target="de" datatype="plaintext" original="messages" date="2020-02-11T00:00:00Z" product-name="wb_custom">
+      <header/>
+      <body>
+         <trans-unit id="webbreeze" xml:space="preserve">
+            <target>by <![CDATA[<a href="https://webbreeze.de" title="zu WebBreeze" target="_blank">WebBreeze</a>]]></target>
+         </trans-unit>
+         <trans-unit id="logopath" xml:space="preserve">
+            <target>typo3conf/ext/wb_custom/Resources/Public/Images/logo.svg</target>
+         </trans-unit>
+         <trans-unit id="logo_alttext" xml:space="preserve">
+            <target>WebBreeze Logo</target>
+         </trans-unit>
+         <trans-unit id="menu_iconpath" xml:space="preserve">
+            <target>typo3conf/ext/wb_custom/Resources/Public/Icons/menu.svg</target>
+         </trans-unit>
+         <trans-unit id="menu" xml:space="preserve">
+            <target>Menü</target>
+         </trans-unit>
+         <trans-unit id="mainnavigation" xml:space="preserve">
+            <target>Hauptnavigation</target>
+         </trans-unit>
+         <trans-unit id="togglemainnavigation" xml:space="preserve">
+            <target>Hauptnavigation umschalten</target>
+         </trans-unit>
+         <trans-unit id="totop" xml:space="preserve">
+            <target>Klicken, um zum Seitenanfang zu gelangen</target>
+         </trans-unit>
+         <trans-unit id="headerinfo.col1" xml:space="preserve">
+            <target><![CDATA[<i class="fas fa-phone"></i> <a href="tel:">0123-456789</a>]]></target>
+         </trans-unit>
+         <trans-unit id="headerinfo.col2" xml:space="preserve">
+            <target><![CDATA[<i class="far fa-envelope"></i> <a href="mailto:">info@kanzlei-lorem-ipsum.de</a>]]></target>
+         </trans-unit>
+         <trans-unit id="contact.header" xml:space="preserve">
+            <target>Kontakt</target>
+         </trans-unit>
+         <trans-unit id="contact.col1.text" xml:space="preserve">
+            <target><![CDATA[Kanzlei Lorem & Ipsum<br><i class="fas fa-home"></i> Musterstr. 123<br>54321 Musterstadt]]></target>
+         </trans-unit>
+         <trans-unit id="contact.col2.text" xml:space="preserve">
+            <target><![CDATA[<i class="fas fa-phone"></i> <a href="tel:">0123-456789</a><br><i class="far fa-envelope"></i> <a href="mailto:">info@kanzlei-lorem-ipsum.de</a>]]></target>
+         </trans-unit>
+         <trans-unit id="contact.col3.text" xml:space="preserve">
+            <target><![CDATA[<i class="fas fa-map-marked-alt"></i> <a href="/">Routenplaner</a>]]></target>
+         </trans-unit>
+         <trans-unit id="appointment" xml:space="preserve">
+            <target>Termin vereinbaren</target>
+         </trans-unit>
+      </body>
+   </file>
+</xliff>

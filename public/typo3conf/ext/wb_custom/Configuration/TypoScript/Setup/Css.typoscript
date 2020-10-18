@@ -1,0 +1,5 @@
+page {
+    includeCSS {
+        custom = EXT:wb_custom/Resources/Public/Css/Style.css
+    }
+}

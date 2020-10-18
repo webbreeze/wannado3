@@ -1,0 +1,12 @@
+page {
+    10 {
+        dataProcessing {
+            30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            30 {
+                special = directory
+                special.value = {$footerMenuPid}
+                as = footernavigation
+            }
+        }
+    }
+}

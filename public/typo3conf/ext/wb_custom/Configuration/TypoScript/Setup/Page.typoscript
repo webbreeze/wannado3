@@ -1,0 +1,7 @@
+page.bodyTag = <body data-spy="scroll" data-target=".navbar" data-offset="200">
+page {
+    footerData {
+        10 = TEXT
+        10.value = <script id="cituro-widget-loader" type="text/javascript" src="https://app.cituro.com/bookingwidget/1749214?initial=true" defer></script>
+    }
+}

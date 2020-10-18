@@ -1,0 +1,5 @@
+page {
+    includeJSFooter {
+        script = EXT:wb_custom/Resources/Public/Js/Script.js
+    }
+}

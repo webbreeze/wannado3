@@ -1,0 +1,131 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Headerinfo">
+  <div class="top-container row">
+    <div class="col-lg-6 col-md-6">
+      <f:format.html><f:translate key="{locallang}headerinfo.col1"/></f:format.html>
+    </div>
+    <div class="col-lg-6 col-md-6">
+      <f:format.html><f:translate key="{locallang}headerinfo.col2"/></f:format.html>
+    </div>
+  </div>
+</f:section>
+
+<f:section name="Headerimage">
+  <f:if condition="{headerimage}">
+    <header class="wb-header{f:if(condition: '{data.uid} == {startPid}', then: ' startpage')}" style="background-image: url({f:uri.image(image:'{headerimage.0.originalFile}')});">
+      <div class="wb-layer">
+        <span class="copyright">{headerimage.0.properties.title}</span>
+        <f:if condition="{headerimage.0.properties.description}">
+          <div class="container">
+            <div class="row align-items-center justify-content-center text-center wb-minheight">
+              <div class="col-md-10">
+                <h1>{headerimage.0.properties.description}</h1>
+              </div>
+            </div>
+          </div>
+        </f:if>
+      </div>
+    </header>
+  </f:if>
+</f:section>
+
+<f:section name="Mainnavigation">
+  <nav class="navbar navbar-expand-md wb-navbar-transparent" id="main-header">
+    <div class="container">
+      <f:link.typolink class="navbar-brand" parameter="{startPid}">
+        <f:image src="{f:translate(key:'{locallang}logopath')}" alt="{f:translate(key:'{locallang}logo_alttext')}" width="200" />
+      </f:link.typolink>
+      <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="{f:translate(key:'{locallang}togglemainnavigation')}">
+        <span class="navbar-toggler-icon">
+          <f:image src="{f:translate(key:'{locallang}menu_iconpath')}" alt="" height="31" />
+        </span>
+        <span class="navbar-toggler-text">
+          <f:translate key="{locallang}menu"/>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainmenu">
+        <f:if condition="{mainnavigation}">
+          <ul class="navbar-nav ml-auto smooth-scroll">
+            <f:for each="{mainnavigation}" as="item">
+              <f:render partial="Navigation/Elements/Item" arguments="{item: item}"/>
+              </li>
+            </f:for>
+          </ul>
+        </f:if>
+      </div>
+    </div>
+  </nav>
+</f:section>
+
+<f:section name="Main">
+  <main>
+    <f:cObject typoscriptObjectPath="lib.content" data="{colPos: '0'}" />
+  </main>
+</f:section>
+
+<f:section name="Footer">
+  <footer>
+    <div class="container">
+      <div class="row pt-4">
+        <div class="col-12">
+          <h5 class="pb-3"><f:translate key="{locallang}contact.header"/></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <f:format.html><f:translate key="{locallang}contact.col1.text"/></f:format.html>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <f:format.html><f:translate key="{locallang}contact.col2.text"/></f:format.html>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <f:format.html><f:translate key="{locallang}contact.col3.text"/></f:format.html>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 copyright-footermenu">
+      <div class="container">
+        <div class="row pt-2 pb-2">
+          <div class="col-4">
+            <p class="copyright">&copy; <f:format.date format="Y">now</f:format.date> <f:format.raw><f:translate key="{locallang}webbreeze"/></f:format.raw></p>
+          </div>
+          <div class="col-8 d-flex justify-content-end">
+            <div class="row">
+              <f:if condition="{footernavigation}">
+                <ul class="list-inline" data-responsive-menu="accordion medium-dropdown">
+                  <f:for each="{footernavigation}" as="navigationItem">
+                    <f:render partial="Navigation/Elements/Item" arguments="{item: navigationItem}"/>
+                    <f:if condition="{navigationItem.children}">
+                      <f:render section="Submenu" arguments="{submenu: navigationItem.children}"/>
+                    </f:if>
+                    </li>
+                  </f:for>
+                </ul>
+              </f:if>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="{f:translate(key:'{locallang}totop')}" data-toggle="tooltip" data-placement="left">
+      <svg class="bi bi-chevron-up" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M9.646 6.646a.5.5 0 01.708 0l6 6a.5.5 0 01-.708.708L10 7.707l-5.646 5.647a.5.5 0 01-.708-.708l6-6z" clip-rule="evenodd"/>
+      </svg>
+    </a>
+  </footer>
+</f:section>
+
+<f:section name="Submenu">
+  <ul class="vertical menu">
+    <f:for each="{submenu}" as="subItem">
+      <f:render partial="Navigation/Elements/Item" arguments="{item: subItem}"/>
+      <f:if condition="{subItem.children}">
+        <f:render section="submenu" arguments="{submenu: subItem.children}"/>
+      </f:if>
+      </li>
+    </f:for>
+  </ul>
+</f:section>

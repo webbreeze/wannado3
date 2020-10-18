@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+   <file source-language="en" datatype="plaintext" original="messages" date="2020-02-11T00:00:00Z" product-name="wb_custom">
+      <header/>
+      <body>
+         <trans-unit id="webbreeze" xml:space="preserve">
+            <source>by <![CDATA[<a href="https://webbreeze.de" title="zu WebBreeze" target="_blank">WebBreeze</a>]]></source>
+         </trans-unit>
+         <trans-unit id="logopath" xml:space="preserve">
+            <source>typo3conf/ext/wb_custom/Resources/Public/Images/logo.svg</source>
+         </trans-unit>
+         <trans-unit id="logo_alttext" xml:space="preserve">
+            <source>WebBreeze Logo</source>
+         </trans-unit>
+         <trans-unit id="menu_iconpath" xml:space="preserve">
+            <source>typo3conf/ext/wb_custom/Resources/Public/Icons/menu.svg</source>
+         </trans-unit>
+         <trans-unit id="menu" xml:space="preserve">
+            <source>Menu</source>
+         </trans-unit>
+         <trans-unit id="mainnavigation" xml:space="preserve">
+            <source>Main navigation</source>
+         </trans-unit>
+         <trans-unit id="togglemainnavigation" xml:space="preserve">
+            <source>Toggle main navigation</source>
+         </trans-unit>
+         <trans-unit id="totop" xml:space="preserve">
+            <source>Click to go to the top of the page</source>
+         </trans-unit>
+         <trans-unit id="headerinfo.col1" xml:space="preserve">
+            <source><![CDATA[<i class="fas fa-phone"></i> <a href="tel:">0123-456789</a>]]></source>
+         </trans-unit>
+         <trans-unit id="headerinfo.col2" xml:space="preserve">
+            <source><![CDATA[<i class="far fa-envelope"></i> <a href="mailto:">info@kanzlei-lorem-ipsum.de</a>]]></source>
+         </trans-unit>
+         <trans-unit id="contact.col1.header" xml:space="preserve">
+            <source>Contact</source>
+         </trans-unit>
+         <trans-unit id="contact.col1.text" xml:space="preserve">
+            <source><![CDATA[Small animal practice Winterfell<br><i class="fas fa-home"></i> Musterstr. 123<br>54321 Musterstadt<br><br><i class="fas fa-map-marked-alt"></i> route planner<br><br><i class="fas fa-phone"></i> <a href="tel:">0123-456789</a><br><i class="far fa-envelope"></i> <a href="mailto:">info@kleintierpraxis-winterfell.de</a>]]></source>
+         </trans-unit>
+         <trans-unit id="contact.col2.header" xml:space="preserve">
+            <source>Consultation hour</source>
+         </trans-unit>
+         <trans-unit id="contact.col2.text" xml:space="preserve">
+            <source><![CDATA[Monday to Friday:<br>09:00 to 13:00 >br>14:00 to 19:00]]></source>
+         </trans-unit>
+         <trans-unit id="contact.col3.header" xml:space="preserve">
+            <source>Emergency care</source>
+         </trans-unit>
+         <trans-unit id="contact.col3.text" xml:space="preserve">
+            <source><![CDATA[Monday to Friday:<br>09:00 to 19:00 <br>(we ask for short telephone announcement)]]></source>
+         </trans-unit>
+         <trans-unit id="appointment" xml:space="preserve">
+            <source>Make an appointment</source>
+         </trans-unit>
+      </body>
+   </file>
+</xliff>

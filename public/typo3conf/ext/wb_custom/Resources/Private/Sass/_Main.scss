@@ -1,0 +1,250 @@
+main {
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    padding-bottom: 5px;
+    position: relative;
+  }
+
+  h2 {
+    font-weight: 300;
+    padding-bottom: 5px;
+    position: relative;
+  }
+
+  div {
+    .ce-textpic {
+      &.ce-left {
+        &.ce-intext {
+          .ce-gallery {
+            margin: 0 30px 20px 0;
+          }
+        }
+      }
+    }
+    .ce-gallery {
+      figure {
+        display: block;
+      }
+    }
+  }
+
+  .frame-type-textpic {
+    div {
+      .ce-textpic {
+        &.ce-left {
+          &.ce-intext {
+            .ce-gallery {
+              margin: 0 30px 20px 0;
+            }
+          }
+        }
+      }
+      .ce-gallery {
+        .ce-column {
+          padding: 0 20px 20px 0;
+        }
+
+        figure {
+          -webkit-box-shadow: 20px 20px 0px 0px rgba($mediumblue, 1);
+          -moz-box-shadow: 20px 20px 0px 0px rgba($mediumblue, 1);
+          box-shadow: 20px 20px 0px 0px rgba($mediumblue, 1);
+        }
+      }
+    }
+  }
+
+  .center {
+    h1, h2 {
+      display: inline-flex;
+      color: $mediumblue;
+
+      &.text-center {
+        display: block;
+      }
+    }
+  }
+
+  .parallaximage {
+    background-size: cover !important;
+  }
+
+  .backgroundimage, .parallaximage {
+    .container {
+      background-color: rgba($mediumblue, 0.9);
+      color: $white;
+    }
+  }
+
+  .tiles {
+    background: $darkblue;
+
+    &:first-child {
+      background: transparent;
+      margin-bottom: -150px;
+
+      .tile {
+        top: -150px;
+        padding: 0;
+
+        &:nth-child(odd) {
+
+          .col-12 {
+            background: $darkblue;
+            color: $white;
+            padding: 2.5rem;
+          }
+        }
+
+        &:nth-child(even) {
+
+          .col-12 {
+            background: $mediumblue;
+            color: $white;
+            padding: 2.5rem;
+          }
+        }
+
+        .ce-bodytext {
+          padding: 0;
+        }
+
+        .ce-textpic.ce-center.ce-above {
+          padding: 3rem;
+        }
+      }
+
+      .center h1, .center h2 {
+        min-height: 50px;
+        padding: 0;
+        margin: 0;
+        font-size: 1.5rem;
+        align-items: center;
+        vertical-align: middle;
+      }
+    }
+
+    &.backgroundimage {
+      .tile {
+        .col-12 {
+          background: $darkblue;
+          color: $white;
+          padding: 2.5rem;
+        }
+
+        .ce-bodytext {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .tile {
+    color: $textcolor;
+    line-height: 2;
+    font-size: 0.8rem;
+
+    div[class*=col-] {
+      border-radius: 0 !important;
+      margin: 0 !important;
+      flex: auto;
+
+      h1, h2, h3, h4, h5, h6 {
+        color: $white;
+        font-size: 1.3rem;
+      }
+
+      a, object {
+        padding: 0 !important;
+        height: auto !important;
+        border-radius: 0 !important;
+
+        header {
+          color: $white;
+        }
+
+        .ce-gallery {
+          margin-top: 0;
+        }
+
+        .ce-bodytext {
+          padding: 2.5rem;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      .ce-textpic.ce-center.ce-above {
+        .ce-gallery {
+          margin: 0;
+        }
+      }
+
+      &.backgroundimage {
+        color: $white;
+
+        a, object {
+          background: rgba(0, 0, 0, 0.7);
+        }
+      }
+    }
+
+    .contentlink {
+      text-decoration: none;
+    }
+  }
+
+  .accordion {
+
+    header {
+      padding: 1.25rem 1.25rem 1.25rem 0rem;
+    }
+
+    .card {
+      border: none;
+      padding: 0 !important;
+      height: auto !important;
+      border-radius: 0 !important;
+      box-shadow: 0 0 20px -10px rgba($darkblue,1);
+    }
+
+    .card-link {
+      color: $mediumblue;
+      font-weight: 300;
+
+      &:after {
+        font-weight: 900;
+        content: "\f0e3";
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        font-size: 1em;
+        position: absolute;
+        right: -1.5rem;
+        color: $mediumblue;
+      }
+
+      &[aria-expanded="true"]:after {
+        content: "\f0e3";
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        color: $gold;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .card-body {
+      padding-left: 0;
+    }
+  }
+}
