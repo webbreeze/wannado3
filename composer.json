@@ -2,40 +2,12 @@
 	"repositories": [
 		{ "type": "composer", "url": "https://composer.typo3.org/" },
 		{
-			"type": "package",
-			"package": {
-				"name": "webbreeze/wb_contentelements",
-				"version":"1.0.2",
-				"type": "typo3-cms-extension",
-				"source": {
-					"url": "https://github.com/webbreeze/wb_contentelements",
-					"type": "git",
-					"reference":"origin/master"
-				},
-				"autoload": {
-					"psr-4": {
-						"WebBreeze\\WbContentelements\\": "Classes/"
-					}
-				}
-			}
+			"type": "vcs",
+			"url": "https://github.com/webbreeze/wb_basic.git"
 		},
 		{
-			"type": "package",
-			"package": {
-				"name": "webbreeze/wb_basic",
-				"version":"1.0.1",
-				"type": "typo3-cms-extension",
-				"source": {
-					"url": "https://github.com/webbreeze/wb_basic",
-					"type": "git",
-					"reference":"origin/master"
-				},
-				"autoload": {
-					"psr-4": {
-						"WebBreeze\\WbBasic\\": "Classes/"
-					}
-				}
-			}
+			"type": "vcs",
+			"url": "https://github.com/webbreeze/wb_contentelements.git"
 		}
 	],
 	"name": "typo3/cms-base-distribution",
@@ -75,8 +47,8 @@
 		"typo3/cms-tstemplate": "^10.4",
 		"typo3/cms-viewpage": "^10.4",
 		"gridelementsteam/gridelements": "^10.0",
-		"webbreeze/wb_contentelements": "^1.0",
-		"webbreeze/wb_basic": "^1.0"
+		"webbreeze/wb_basic": "dev-master",
+		"webbreeze/wb_contentelements": "dev-master",
 	},
 	"scripts":{
 		"typo3-cms-scripts": [
